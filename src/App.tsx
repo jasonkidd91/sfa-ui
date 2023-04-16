@@ -7,7 +7,7 @@ import { theme } from "./core/Theme";
 
 export default function App() {
   return (
-    <CssVarsProvider disableTransitionOnChange theme={theme}>
+    <CssVarsProvider disableTransitionOnChange theme={theme} defaultMode="dark">
       <CssBaseline />
       <BaseContainer>
         <Routes>

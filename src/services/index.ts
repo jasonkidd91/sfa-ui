@@ -57,3 +57,21 @@ export const deleteTransction = async (id: any) => {
     url: config.endpoint.payment.deleteTransction.replace("{id}", id), // API endpoint
   });
 };
+
+/**
+ * Stash Away Test
+ */
+export const fetchAllUserPortfolios = async () => {
+  return await makeApiRequest<any>({
+    method: "get", // HTTP method
+    url: config.endpoint.stashaway.fetchAllUserPortfolios, // API endpoint
+  });
+};
+
+export const createDeposits = async (transactionData: any) => {
+  return await makeApiRequest<any>({
+    method: "post", // HTTP method
+    url: config.endpoint.stashaway.createDeposits, // API endpoint
+    data: transactionData,
+  });
+};

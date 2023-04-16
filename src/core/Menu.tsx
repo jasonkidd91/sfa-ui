@@ -15,20 +15,21 @@ import ProfileCard, { ProfileCardSkeleton } from "../components/ProfileCard";
 import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
 import SyncAltIcon from "@mui/icons-material/SyncAlt";
 import ArticleRoundedIcon from "@mui/icons-material/ArticleRounded";
-import CodeIcon from '@mui/icons-material/Code';
-
+import CodeIcon from "@mui/icons-material/Code";
 
 // Screens
+import LogoDevIcon from "@mui/icons-material/LogoDev";
 import DashboardScreen from "../screens/DashboardScreen";
 import DepositScreen from "../screens/DepositScreen";
 import TransactionsScreen from "../screens/TransactionsScreen";
 import SwaggerUiScreen from "../screens/SwaggerUiScreen";
+import StashAwayTestScreen from "../screens/StashAwayTestScreen";
 
 const routes = [
   {
     name: "Dashboard",
     icon: <SpaceDashboardIcon fontSize="small" />,
-    path: "/",
+    path: "/dashboard",
     component: <DashboardScreen />,
   },
   {
@@ -48,6 +49,12 @@ const routes = [
     icon: <CodeIcon fontSize="small" />,
     path: "/developer",
     component: <SwaggerUiScreen />,
+  },
+  {
+    name: "Stash Away Assessment",
+    icon: <LogoDevIcon fontSize="small" />,
+    path: "/",
+    component: <StashAwayTestScreen />,
   },
 ];
 
